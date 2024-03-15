@@ -9,7 +9,6 @@ export default class PeopleListComponent extends Component {
 
   @action addPerson() {
     this.people.push(scientists.pop());
-
     set(this, 'people', this.people);
   }
 }
