@@ -5,11 +5,9 @@ import { tracked } from 'tracked-built-ins';
 const scientists = ['Marie Curie', 'Mae Jemison', 'Albert Hofmann'];
 
 export default class PeopleListComponent extends Component {
-  people = tracked(Map);
+  people = tracked([]);
 
   @action addPerson() {
-    const guid = Math.random().toString();
-
-    this.people.set(guid, scientists.pop());
+    this.people.push(scientists.pop());
   }
 }
