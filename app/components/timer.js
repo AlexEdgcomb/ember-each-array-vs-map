@@ -1,5 +1,5 @@
 import Component from '@glimmer/component';
-import { tracked } from 'tracked-built-ins';
+import { tracked } from '@glimmer/tracking';
 
 export default class PeopleListComponent extends Component {
   @tracked time = 0;
