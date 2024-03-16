@@ -1,6 +1,6 @@
 import Component from '@glimmer/component';
 import { action, set } from '@ember/object';
-import { tracked } from 'tracked-built-ins';
+import { tracked } from '@glimmer/tracking';
 
 const scientists = ['Marie Curie', 'Mae Jemison', 'Albert Hofmann'];
 
